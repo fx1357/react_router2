@@ -30,6 +30,7 @@ const Home = () => {
                         title={article.title}
                         desc={article.description}
                         img={article.urlToImage ? article.urlToImage : require("../assets/empty_image.png")}
+                        link={"/news"}
                     />
                 ))}
             </Row>

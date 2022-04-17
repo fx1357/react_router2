@@ -1,7 +1,10 @@
 import React from 'react';
 import {Button, Card, Col} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
-const CardView = ({img, title, desc}) => {
+const CardView = ({img, title, desc, link}) => {
+
+
     return (
         <Col>
             <Card style={{ width: '18rem' }}>
@@ -11,7 +14,10 @@ const CardView = ({img, title, desc}) => {
                     <Card.Text>
                         {desc}
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Link to={link}>
+                        <Button variant="primary">자세히보기</Button>
+                    </Link>
+
                 </Card.Body>
             </Card>
         </Col>

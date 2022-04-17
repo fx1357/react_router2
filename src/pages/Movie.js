@@ -38,6 +38,7 @@ const Movie = () => {
                             title={movie.title}
                             desc={movie.overview}
                             img={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                            link={`/movie/${movie.id}`}
                         />
                     ))
                 }
